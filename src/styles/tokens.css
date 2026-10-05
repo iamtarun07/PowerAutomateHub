@@ -1,0 +1,122 @@
+/* Layout: fixed documentation sidebar + reading column; diagrams may run wider than text. */
+:root {
+  color-scheme: light;
+  --bg: #f6f6f3;
+  --surface: #ffffff;
+  --surface-2: #efefea;
+  --fg: #1c1d20;
+  --muted: #5d5f66;
+  --faint: #8a8c92;
+  --border: #dcdcd4;
+  --border-strong: #c3c3ba;
+  --accent: #34408f;
+  --accent-weak: #e7e9f5;
+  --accent-fg: #ffffff;
+  --code-bg: #f0f0eb;
+
+  /* Semantic node colors: meaning, not decoration. */
+  --k-trigger: #34408f;
+  --k-action: #5a6878;
+  --k-data: #5a6878;
+  --k-variable: #6b6e52;
+  --k-condition: #a8730f;
+  --k-loop: #8a5a44;
+  --k-scope: #8a5a44;
+  --k-http: #5a6878;
+  --k-ado: #1d68ad;
+  --k-success: #2c7a4b;
+  --k-failure: #b2392e;
+  --k-end: #6f7177;
+
+  --syn-string: #2c7a4b;
+  --syn-number: #a8730f;
+  --syn-function: #34408f;
+  --syn-keyword: #b2392e;
+  --syn-punct: #8a8c92;
+
+  --font-sans: 'IBM Plex Sans', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-display: 'IBM Plex Sans Condensed', 'IBM Plex Sans', 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'Cascadia Mono', Consolas, monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-base: 0.9375rem;
+  --text-md: 1.0625rem;
+  --text-lg: 1.375rem;
+  --text-xl: 1.875rem;
+
+  --radius: 4px;
+  --radius-lg: 6px;
+  --header-h: 52px;
+  --sidebar-w: 264px;
+  --content-w: 52rem;
+  --gutter: 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+    --bg: #15161a;
+    --surface: #1c1d22;
+    --surface-2: #24262c;
+    --fg: #e7e7e3;
+    --muted: #a3a5ab;
+    --faint: #7d7f86;
+    --border: #2f3138;
+    --border-strong: #42444c;
+    --accent: #9aa3ea;
+    --accent-weak: #262a45;
+    --accent-fg: #15161a;
+    --code-bg: #202227;
+    --k-trigger: #9aa3ea;
+    --k-action: #9aa7b6;
+    --k-data: #9aa7b6;
+    --k-variable: #b4b78f;
+    --k-condition: #e0a948;
+    --k-loop: #d2967a;
+    --k-scope: #d2967a;
+    --k-http: #9aa7b6;
+    --k-ado: #6fb1ea;
+    --k-success: #6cc28f;
+    --k-failure: #ef7f74;
+    --k-end: #a3a5ab;
+    --syn-string: #6cc28f;
+    --syn-number: #e0a948;
+    --syn-function: #9aa3ea;
+    --syn-keyword: #ef7f74;
+    --syn-punct: #7d7f86;
+  }
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #15161a;
+  --surface: #1c1d22;
+  --surface-2: #24262c;
+  --fg: #e7e7e3;
+  --muted: #a3a5ab;
+  --faint: #7d7f86;
+  --border: #2f3138;
+  --border-strong: #42444c;
+  --accent: #9aa3ea;
+  --accent-weak: #262a45;
+  --accent-fg: #15161a;
+  --code-bg: #202227;
+  --k-trigger: #9aa3ea;
+  --k-action: #9aa7b6;
+  --k-data: #9aa7b6;
+  --k-variable: #b4b78f;
+  --k-condition: #e0a948;
+  --k-loop: #d2967a;
+  --k-scope: #d2967a;
+  --k-http: #9aa7b6;
+  --k-ado: #6fb1ea;
+  --k-success: #6cc28f;
+  --k-failure: #ef7f74;
+  --k-end: #a3a5ab;
+  --syn-string: #6cc28f;
+  --syn-number: #e0a948;
+  --syn-function: #9aa3ea;
+  --syn-keyword: #ef7f74;
+  --syn-punct: #7d7f86;
+}

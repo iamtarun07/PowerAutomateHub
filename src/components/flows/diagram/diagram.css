@@ -1,0 +1,51 @@
+.diagram {
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface-2);
+  min-width: 0;
+}
+.diagram__scroll {
+  overflow-x: auto;
+  padding: 12px;
+  /* Faint grid, like a canvas; drawn with a single repeating gradient. */
+  background-image: radial-gradient(var(--border) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+.diagram__svg {
+  display: block;
+  max-width: none;
+  margin-inline: auto;
+}
+.dnode__label {
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  font-weight: 600;
+  fill: var(--fg);
+}
+.dnode__detail {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  fill: var(--muted);
+}
+.dnode__box { transition: stroke 120ms ease; }
+.dnode:hover .dnode__box { stroke: var(--accent) !important; stroke-width: 1.5; }
+.dedge__label {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  paint-order: stroke;
+  stroke: var(--surface-2);
+  stroke-width: 4px;
+}
+.diagram__legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  padding: 10px 12px;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+  font-size: var(--text-xs);
+  color: var(--muted);
+}
+.diagram__legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.diagram__legend-item--edge { margin-left: auto; }
